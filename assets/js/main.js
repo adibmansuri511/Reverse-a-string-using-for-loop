@@ -1,8 +1,8 @@
-// program to find the factorial of a number
-function factorial() {
+// program to reverse the string
+function reverseString() {
 
     // Take input from the user
-    const number = Number(document.getElementById("number").value);
+    const string = (document.getElementById("number").value);
 
     let answer = "";
 
