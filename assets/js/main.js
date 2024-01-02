@@ -2,31 +2,17 @@
 function reverseString() {
 
     // Take input from the user
-    const string = (document.getElementById("number").value);
+    const str = (document.getElementById("str").value).toString();
 
-    let answer = "";
+    // empty string
+    let reverseStr = "";
 
-    // checking if number is negative
-    if (number < 0) {
-        answer = 'Error! Factorial for negative number does not exist.';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseStr += str[i];
     }
 
-    // if number is 0
-    else if (number === 0) {
-        answer = `The factorial of ${number} is 1.`;
-    }
+    let newStr = `Reversed String : ${reverseStr}`;
 
-    // if number is positive
-
-    else {
-        let fact = 1;
-        for (let i = 1; i <= number; i++) {
-            fact *= i;
-        }
-        answer = `The factorial of ${number} is ${fact}.`;
-
-    }
-
-    console.log(answer);
-    document.querySelector('#h4').innerHTML = answer;
+    console.log(newStr);
+    document.querySelector('#h4').innerHTML = newStr;
 }
