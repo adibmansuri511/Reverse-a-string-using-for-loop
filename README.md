@@ -1,2 +1,3 @@
-# reverse-a-string
- Practice Example
+# Reverse-a-string
+JavaScript Practice Example.
+
